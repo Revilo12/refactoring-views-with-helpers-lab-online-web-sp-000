@@ -1,9 +1,9 @@
 module SongsHelper
-  def artist_name
-    self.artist.name
+  def artist_name(song)
+    song.artist.name
   end
 
-  def artist_name=(name)
-    self.artist.name = name
+  def artist_name=(song, name)
+    song.artist.name = name
   end
 end
